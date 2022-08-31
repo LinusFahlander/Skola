@@ -1,8 +1,0 @@
- /* 
-    display: block;                 reserverar en hel rad, elementet tar upp hela raden
-    display: inline;                reserverar endast det utrymmet som krävs, element läggs på samma rad om det får plats
-    display: inline-block;          beter sig som en inline, men vi kan sätta höjd, bredd etc.
-    display: flex;
- */
-
- 
