@@ -55,18 +55,21 @@ html, body{
         justify-content: space-between;
         align-items: center;
     }
+        .top-bar .top-bar-links {
+            padding: 1rem 0;
+        }
 
     .top-bar a {
         color: var(--color-white);
         text-decoration: none;
-        margin: 1rem;
+        margin: 1.2rem;
     }
         .top-bar a:hover {
             color: var(--color-theme-dark);
         }
 
-    .top-bar .social-media a {
-        margin-left: 0 1rem;
+    .top-bar .social-media {
+        margin-left: 0.8rem;
     }
         .top-bar .social-media a {
             margin: 0 0.3rem;
