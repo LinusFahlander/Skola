@@ -101,10 +101,14 @@ html, body{
             width: 250px;
             margin-top: 3rem;
         }
-            .top-bar .dropdown-theme .dropdown-menu .dropdown-list{
+            .top-bar .dropdown-theme .dropdown-menu .dropdown-item{
                 background-color: var(--color-theme);
                 color: var(--color-white);
                 border: none;
                 width: 100%;
-                margin-top: 0;
+                margin: 0;
             }
+                .top-bar .dropdown-theme .dropdown-menu .dropdown-item:hover{
+                    background-color: var(--color-theme-dark);
+                    color: var(--color-white);
+                }
