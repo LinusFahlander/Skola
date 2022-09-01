@@ -123,8 +123,9 @@ html, body {
             .top-bar .top-bar-links .social-media a:last-child {
                 margin: 0 0 0 0.3rem;
             }
-         
- 
+
+            
+ /* Responsivity*/
 @media (min-width: 768px) {
     .top-bar .top-bar-links {
         display: block;
