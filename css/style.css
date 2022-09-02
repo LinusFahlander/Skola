@@ -43,6 +43,19 @@ html, body {
     color: var(--color-theme-dark);
 }
 
+.btn-theme {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    border-radius: var(--border-radius-medium);
+    font-weight: var(--font-weight-medium);
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+    .btn-theme:hover {
+        background-color: var(--color-theme-dark);
+        color: var(--color-white);
+    }
+
 
 /* top-bar */
 .top-bar {
@@ -70,6 +83,7 @@ html, body {
                 background-color: var(--color-theme);
                 color: var(--color-white);
                 border: none;
+                padding: 0;
             }
                 .top-bar .site-settings .dropdown-theme button:hover {
                     color: var(--color-theme-dark);
@@ -127,13 +141,17 @@ html, body {
 
 /*main-menu*/
 .mid-bar {
-    padding: 2rem;
+    background-color: var(--color-white);
+    color: var(--color-theme-dark);
 }
 
-.mid-bar .container {
+.mid-bar > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+
 }
 .mid-bar .brand {
     flex: 2;
@@ -162,10 +180,55 @@ html, body {
             .mid-bar .mid-bar-links .mid-bar-link:last-child {
                 margin: 0 0 0 0.8rem;
             }
-                .mid-bar .mid-bar-links .mid-bar-link i {
-                    font-size: var(--font-size-16);
+        .mid-bar .mid-bar-links .mid-bar-link i {
+            font-size: var(--font-size-16);
+        }
+
+
+    .mid-bar nav {
+        border-top: 1px solid var(--color-gray-2);
+        border-bottom: 1px solid var(--color-gray-2);
+    }
+        .mid-bar > nav > .container {
+            display: flex;
+            justify-content: space-between;
+
+        }
+        
+        .mid-bar nav .browse-categories {
+            flex: 2;
+        }
+            .mid-bar nav .browse-categories button {
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                border: none;
+                font-size: 1rem;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.7rem 1rem;
+            }
+                .mid-bar nav .browse-categories button:hover {
+                    background-color: var(--color-theme-dark);
+                    color: var(--color-white);
                 }
 
+                .mid-bar nav .browse-categories button span {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .mid-bar nav .browse-categories button > span > i {
+                    font-size: 1.4em;
+                }
+
+        .mid-bar nav .special-offer {
+            flex: 7;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
 
 
 
