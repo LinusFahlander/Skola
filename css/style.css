@@ -124,7 +124,64 @@ html, body {
                 margin: 0 0 0 0.3rem;
             }
 
-            
+
+/*main-menu*/
+.mid-bar {
+    padding: 2rem;
+}
+
+.mid-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mid-bar .brand {
+    flex: 2;
+}
+.mid-bar .search {
+    flex: 4;
+}
+.mid-bar .mid-bar-links {
+    flex: 3;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+    .mid-bar .mid-bar-links .mid-bar-link {
+        text-decoration: none;
+        color: var(--color-theme-dark);
+        text-decoration: none;
+        margin: 0 0.8rem;
+    }
+        .mid-bar .mid-bar-links .mid-bar-link:hover {
+            color: var(--color-theme);
+        }
+            .mid-bar .mid-bar-links .mid-bar-link:first-child {
+                margin: 0 2.4rem 0 0;
+            }
+            .mid-bar .mid-bar-links .mid-bar-link:last-child {
+                margin: 0 0 0 0.8rem;
+            }
+                .mid-bar .mid-bar-links .mid-bar-link i {
+                    font-size: var(--font-size-16);
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  /* Responsivity*/
 @media (min-width: 768px) {
     .top-bar .top-bar-links {
