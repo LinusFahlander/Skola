@@ -231,6 +231,42 @@ html, body {
         }
 
 
+/* Showcase */
+.showcase {
+    background-color: var(--color-gray-3);
+}
+    .showcase .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .showcase .showcase-text {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 3rem 1rem;
+        }
+        .showcase .showcase-text h1 {
+            font-family: var(--font-play);
+            font-size: 3.8rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+            .showcase .showcase-text h1 strong {
+                font-weight: var(--font-weight-bold);
+                color: var(--color-theme);
+            }
+
+            .showcase .showcase-text p {
+                display: none;
+            }
+            .showcase .showcase-text a {
+                text-align: center;
+            }
+
+    .showcase img {
+        display: none;
+    }
 
 
 
