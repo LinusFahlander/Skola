@@ -34,7 +34,7 @@
     --border-radius-rounded: 50%;
 }
 
-/* General */
+/* general */
 html, body {
     font-size: 16px;
     line-height: 1.5;
@@ -43,6 +43,7 @@ html, body {
     color: var(--color-theme-dark);
 }
 
+/* button design */
 .btn-theme {
     background-color: var(--color-theme);
     color: var(--color-white);
@@ -70,7 +71,7 @@ html, body {
 }
 
 
-/* top-bar */ 
+/* top-bar-menu */ 
 .top-bar {
     background-color: var(--color-theme);
     color: var(--color-white);
@@ -152,7 +153,7 @@ html, body {
             }
         
 
-/*main-menu*/
+/* mid-bar-menu */
 .mid-bar {
     background-color: var(--color-white);
     color: var(--color-theme-dark);
@@ -197,7 +198,7 @@ html, body {
             font-size: var(--font-size-16);
         }
 
-
+/* nav-bar-bottom */
     .mid-bar nav {
         border-top: 1px solid var(--color-gray-2);
         border-bottom: 1px solid var(--color-gray-2);
@@ -244,7 +245,7 @@ html, body {
         }
     
 
-/* Showcase */
+/* showcase */
 .showcase {
     background-color: var(--color-gray-3);
 }
@@ -269,12 +270,29 @@ html, body {
     .showcase img {
         display: none;
     }
-            
+
+
+/* info */
+.webshop-info {
+    padding: 4rem 0;
+}
+
+    .webshop-info .container-fluid {
+        max-width: 1600px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+        .webshop-info .info-box {
+            margin: 0 2rem;
+            flex: 1;
+        }
 
 
 
 
- /* responsivity*/
+
+ /*media-responsivity*/
 @media (min-width: 768px) {
     .showcase .showcase-text h1 {
         font-size: var(--font-size-60);
