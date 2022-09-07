@@ -71,6 +71,11 @@ html, body {
         color: var(--color-white);
     }
 
+/* bg-theme design for bade over cart */
+.bg-theme {
+    background-color: var(--color-theme);
+}
+
 /* section-title */
 .section-title {
     padding: 3rem 0;
@@ -180,7 +185,7 @@ html, body {
     color: var(--color-theme-dark);
 }
 
-.mid-bar > .container {
+    .mid-bar > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -188,86 +193,99 @@ html, body {
     padding-bottom: 2.2rem;
 
 }
-/* logo left */
-.mid-bar .brand {
-    flex: 2;
-}
-/* search-middle */
-.mid-bar .search {
-    flex: 4;
-}
-/* links-right */
-.mid-bar .mid-bar-links {
-    flex: 3;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-    .mid-bar .mid-bar-links .mid-bar-link {
-        text-decoration: none;
-        color: var(--color-theme-dark);
-        text-decoration: none;
-        margin: 0 0.8rem;
+    /* logo left */
+    .mid-bar .brand {
+        flex: 2;
     }
-        .mid-bar .mid-bar-links .mid-bar-link:hover {
-            color: var(--color-theme);
+    /* search-middle */
+    .mid-bar .search {
+        flex: 4;
+    }
+    /* links-right */
+    .mid-bar .mid-bar-links {
+        flex: 3;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+        .mid-bar .mid-bar-links .mid-bar-link {
+            text-decoration: none;
+            color: var(--color-theme-dark);
+            text-decoration: none;
+            margin: 0 0.8rem;
         }
-            .mid-bar .mid-bar-links .mid-bar-link:first-child {
-                margin: 0 2.4rem 0 0;
+            .mid-bar .mid-bar-links .mid-bar-link:hover {
+                color: var(--color-theme);
             }
-            .mid-bar .mid-bar-links .mid-bar-link:last-child {
-                margin: 0 0 0 0.8rem;
+                .mid-bar .mid-bar-links .mid-bar-link:first-child {
+                    margin: 0 2.4rem 0 0;
+                }
+                .mid-bar .mid-bar-links .mid-bar-link:last-child {
+                    margin: 0 0 0 0.8rem;
+                }
+            .mid-bar .mid-bar-links .mid-bar-link i {
+                font-size: var(--font-size-16);
             }
-        .mid-bar .mid-bar-links .mid-bar-link i {
-            font-size: var(--font-size-16);
+
+    /* position for badge over cart */
+    .mid-bar .mid-bar-links #cart {
+        position: relative;
+    }
+        .mid-bar .mid-bar-links #cart .badge {
+            position: absolute;
+            top: -1.2rem;
+            left: 0.7rem;
+        }
+        .mid-bar .mid-bar-links #cart:hover .badge {
+            background-color: var(--color-theme-dark);
         }
 
 /* nav-bar-bottom */
-    .mid-bar nav {
-        border-top: 1px solid var(--color-gray-2);
-        border-bottom: 1px solid var(--color-gray-2);
+.mid-bar nav {
+    border-top: 1px solid var(--color-gray-2);
+    border-bottom: 1px solid var(--color-gray-2);
+}
+    .mid-bar > nav > .container {
+        display: flex;
+        justify-content: space-between;
+
     }
-        .mid-bar > nav > .container {
+    
+    .mid-bar nav .browse-categories {
+        flex: 2;
+    }
+        .mid-bar nav .browse-categories button {
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            border: none;
+            font-size: 1rem;
+            width: 100%;
             display: flex;
             justify-content: space-between;
-
-        }
-        
-        .mid-bar nav .browse-categories {
-            flex: 2;
-        }
-            .mid-bar nav .browse-categories button {
-                background-color: var(--color-theme);
-                color: var(--color-white);
-                border: none;
-                font-size: 1rem;
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0.7rem 1rem;
-            }
-                .mid-bar nav .browse-categories button:hover {
-                    background-color: var(--color-theme-dark);
-                    color: var(--color-white);
-                }
-
-                .mid-bar nav .browse-categories button span {
-                    display: flex;
-                    align-items: center;
-                }
-
-                .mid-bar nav .browse-categories button > span > i {
-                    font-size: 1.4em;
-                }
-
-        .mid-bar nav .special-offer {
-            flex: 7;
-            display: flex;
-            justify-content: end;
             align-items: center;
+            padding: 0.7rem 1rem;
         }
-    
+            .mid-bar nav .browse-categories button:hover {
+                background-color: var(--color-theme-dark);
+                color: var(--color-white);
+            }
+
+            .mid-bar nav .browse-categories button span {
+                display: flex;
+                align-items: center;
+            }
+
+            .mid-bar nav .browse-categories button > span > i {
+                font-size: 1.4em;
+            }
+
+    .mid-bar nav .special-offer {
+        flex: 7;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
 
 /* showcase */
 .showcase {
@@ -346,6 +364,7 @@ html, body {
         }
 
     .shop-by-category .category-box {
+        position: relative;
         background-color: var(--color-gray-1);
         border-radius: var(--border-radius-small);
         height: 100%;
@@ -353,12 +372,25 @@ html, body {
         overflow: hidden;
     }
         .shop-by-category .category-box-title {
+            position: absolute;
+            left: 0;
+            bottom: 0;
             width: 50%;
             border-radius: 0 var(--border-radius-small) 0 0;
             background-color: var(--color-theme-dark);
             color: var(--color-theme);
             padding: 0.5rem 1rem;
+            height: 38px;
         }
+        .shop-by-category .category-box:hover .category-box-title {
+            height: 75px;
+        }
+            .shop-by-category .category-box .category-box-title span {
+                display: block;
+                color: var(--color-white);
+                font-size: 0.8rem;
+                margin-top: 0.5rem;
+            }
 
     /* placement of category-boxes in the grid */
     #category-box-1 {

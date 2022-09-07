@@ -11,7 +11,6 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-
     <Header>
         <div class="top-bar">
                 <div class="container">
@@ -63,8 +62,10 @@
                     <a class="mid-bar-link" href="#"><i class="fa-regular fa-user me-2"></i>My account</a>
                     <a class="mid-bar-link" href="#"><i class="fa-regular fa-heart"></i></a>
                     <a class="mid-bar-link" href="#"><i class="fa-regular fa-shuffle"></i></a>
-                    <a class="mid-bar-link" href="#"><i class="fa-regular fa-cart-shopping me-2"></i>
-                        <span id="cart-total">€99999.99</span>
+                    <a id="cart" class="mid-bar-link" href="#">
+                        <span class="badge rounded-pill bg-theme">99+</span>
+                        <i class="fa-regular fa-cart-shopping me-2"></i>
+                        <span>€99999.99</span>
                     </a>
                 </div>
             </div>
@@ -142,26 +143,48 @@
             </div>
 
             <div class="grid">
-                <div id="category-box-1" class="category-box">
-                    <div class="category-box-title">Men</div>
-                </div>
-                <div id="category-box-2" class="category-box">
-                    <div class="category-box-title">Women</div>
-                </div>
-                <div id="category-box-3" class="category-box">
-                    <div class="category-box-title">Kids</div>
-                </div>
-                <div id="category-box-4" class="category-box">
-                    <div class="category-box-title">Shoes</div>
-                </div>
-                <div id="category-box-5" class="category-box">
-                    <div class="category-box-title">Hats</div>
-                </div>
-                <div id="category-box-6" class="category-box">
-                    <div class="category-box-title">Sunglasses</div>
-                </div>
-                <div id="category-box-7" class="category-box">
-                    <div class="category-box-title">Watches</div>
+                <a href="#" id="category-box-1" class="category-box">
+                    <div class="category-box-title">
+                        Men
+                        <span>38 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-2" class="category-box">
+                    <div class="category-box-title">
+                        Women
+                        <span>63 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-3" class="category-box">
+                    <div class="category-box-title">
+                        Kids
+                        <span>54 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-4" class="category-box">
+                    <div class="category-box-title">
+                        Shoes
+                        <span>24 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-5" class="category-box">
+                    <div class="category-box-title">
+                        Hats
+                        <span>7 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-6" class="category-box">
+                    <div class="category-box-title">
+                        Sunglasses
+                        <span>18 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-7" class="category-box">
+                    <div class="category-box-title">
+                        Watches
+                        <span>13 products</span>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
