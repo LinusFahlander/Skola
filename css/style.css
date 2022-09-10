@@ -90,6 +90,10 @@ color: var(--color-theme);
     color: var(--color-product-outofstock);
 }
 
+.required {
+    color: var(--color-theme);
+}
+
 /* section-title */
 .section-title {
     padding: 3rem 0;
@@ -629,14 +633,33 @@ color: var(--color-theme);
             margin: 1.5rem 0;
             line-height: 2;
         }
-
+            .signup-signin .card .card-body .card-text a {
+                color: var(--color-theme);
+                font-weight: var(--font-weight-medium);
+                text-decoration: none;
+            }
+                .signup-signin .card .card-body .card-text a:hover {
+                    color: var(--color-theme-dark);
+                    text-decoration: underline;
+                }
         .signup-signin .card .card-body .card-text.text-small {
             color: var(--color-gray-5);
             font-size: 0.875rem;
         }
 
 
-
+#signupForm input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: var(--border-radius-small);
+    padding: 0.4rem 0.8rem;
+    margin: 0.2rem 0;
+}
+    #signupForm input:focus {
+        outline: 0;
+        box-shadow: 0 0 3px 0 var(--color-gray-0);
+    }
 
 
 
