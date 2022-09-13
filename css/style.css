@@ -694,11 +694,42 @@ color: var(--color-theme);
                 font-weight: var(--font-weight-medium);
             }
 
+/* flash-sale */
+.flash-sale {
+    background-color: #292f51;
+    color: var(--color-white);
+    height: 418px;
+    margin-top: 8rem;
+}
+    .flash-sale .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+    }
+    .flash-sale .discount-coupon {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-theme);
+        height: 100%;
+        width: 320px;
+    }
 
 
 
 
 
+
+
+
+
+
+
+
+    
 
 /* account-page */
 /* my-account-bar */
