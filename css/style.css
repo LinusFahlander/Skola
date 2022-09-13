@@ -59,6 +59,19 @@ html, body {
         color: var(--color-white);
     }
 
+.btn-theme-dark {
+    background-color: var(--color-theme-dark);
+    color: var(--color-white);
+    border-radius: var(--border-radius-medium);
+    font-weight: var(--font-weight-medium);
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+    .btn-theme-dark:hover {
+        background-color: var(--color-white);
+        color: var(--color-theme);
+    }
+
 /* shop-now button design */
 .btn-white {
     background-color: var(--color-white);
@@ -112,19 +125,6 @@ color: var(--color-theme);
     .section-title p {
         margin: 1rem 0;
     }
-
-
-
-a {
-    color: var(--color-theme);
-    font-weight: var(--font-weight-regular);
-    text-decoration: none;
-}
-    a:hover {
-        color: var(--color-theme-dark);
-        text-decoration: underline;
-    }
-
 
 /* form-theme-my-account-site */
 .form-theme .card {
@@ -638,6 +638,61 @@ a {
                 }
 
 
+/* new-customer */
+.new-customer {
+    background-color: var(--color-gray-0);
+    color: var(--color-white);
+    height: 418px;
+    margin-top: 8rem;
+}
+    .new-customer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+    }
+        .new-customer .discount-coupon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--color-theme);
+
+            height: 100%;
+            width: 320px;
+        }
+            .new-customer .discount-coupon h1 {
+                font-family: var(--font-play);
+                font-size: var(--font-size-60);
+                font-weight: var(--font-weight-bold);
+            }
+                .new-customer .discount-coupon span {
+                    font-family: var(--font-play);
+                    font-size: var(--font-size-36);
+                    font-weight: var(--font-weight-bold);
+                }
+                    .new-customer .discount-coupon p {
+                        font-size: var(--font-size-18);
+                        font-weight: var(--font-weight-medium);
+                    }
+                        .new-customer .discount-coupon button {
+                            font-size: 1.3rem;
+                        }
+
+        .new-customer .more-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            font-size: 0.875rem;
+            height: 100%;
+            max-width: 460px;
+        }
+            .new-customer .more-info button {
+                font-size: 1.3rem;
+                font-weight: var(--font-weight-medium);
+            }
 
 
 
@@ -708,6 +763,16 @@ a {
             column-gap: 2rem;
             align-items: start;
         }
+            .signup-signin a {
+                color: var(--color-theme);
+                font-weight: var(--font-weight-regular);
+                text-decoration: none;
+            }
+                .signup-signin a:hover {
+                    color: var(--color-theme-dark);
+                    text-decoration: underline;
+                }
+                        
 
 .external-logins {
     position: relative;
