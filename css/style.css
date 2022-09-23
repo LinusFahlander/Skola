@@ -337,6 +337,18 @@ color: var(--color-theme);
                 font-size: var(--font-size-16);
             }
 
+    /* position for badge over shuffle */
+    .mid-bar .mid-bar-links #shuffle {
+        position: relative;
+    }
+        .mid-bar .mid-bar-links #shuffle .badge {
+            position: absolute;
+            top: -1.2rem;
+            left: 0.7rem;
+        }
+        .mid-bar .mid-bar-links #shuffle:hover .badge {
+            background-color: var(--color-theme-dark);
+        }
     /* position for badge over cart */
     .mid-bar .mid-bar-links #cart {
         position: relative;
@@ -561,21 +573,21 @@ color: var(--color-theme);
             background-color: var(--color-theme);
 
             height: 100%;
-            width: 320px;
+            width: 255px;
         }
             .new-customer .discount-coupon h1 {
                 font-family: var(--font-play);
-                font-size: var(--font-size-60);
+                font-size: 3.75rem;
                 font-weight: var(--font-weight-bold);
             }
                 .new-customer .discount-coupon span {
                     font-family: var(--font-play);
-                    font-size: var(--font-size-36);
+                    font-size: 2.25rem;
                     font-weight: var(--font-weight-bold);
                 }
                     .new-customer .discount-coupon p {
-                        font-size: var(--font-size-18);
-                        font-weight: var(--font-weight-medium);
+                        font-size: 1rem;
+                        font-weight: var(--font-weight-regular);
                     }
                         .new-customer .discount-coupon button {
                             font-size: 1.3rem;
@@ -593,6 +605,7 @@ color: var(--color-theme);
             .new-customer .more-info button {
                 font-size: 1.3rem;
                 font-weight: var(--font-weight-medium);
+                border: none;
             }
 
 
@@ -699,46 +712,70 @@ color: var(--color-theme);
 
 /* flash-sale */
 .flash-sale {
-    display: flex;
-    align-items: center;
     background: var(--color-theme-dark);
     color: var(--color-white);
     height: 418px;
     margin-top: 8rem;
 }
-
-
-.banner-objects {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-
-    .circles {
+    .grid {
         display: flex;
         justify-content: space-between;
+    }
+        .flash-box {
+            background-color: var(--color-theme);
+            height: 265px;
+            width: 255px;
+        }
+            .flash-box h1 {
+                font-family: var(--font-play);
+                font-size: 3.75rem;
+                font-weight: var(--font-weight-bold);
+                text-align: center;
+                margin-top: 2.3rem;
+            }
+            .flash-box p {
+                font-size: 1.5rem;
+                font-weight: var(--font-weight-medium);
+                text-align: center;
+            }
+    
+    .rightside {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
         align-items: center;
     }
+    .circles {
+        display: flex;
+        margin-top: 7rem;
+    }
         .circle {
-            height: 100px;
-            width: 100px;
-            background-color: var(--color-white);
-            color: var(--color-theme-dark);
+            background: var(--color-white);
             border-radius: 50%;
-            text-align: center;
-            line-height: 0px;
-            padding: 8px;
+            width: 109px;
+            height: 109px;
+            margin: 0 20px;
             outline: 2px dotted var(--color-theme);
+            padding: 1.35rem;
+            line-height: 5px;
         }
             .circle h1 {
                 font-family: var(--font-play);
-                font-size: var(--font-size-36);
                 font-weight: var(--font-weight-bold);
+                font-size: 2rem;
                 color: var(--color-theme);
+                text-align: center;
             }
-
+            .circle p {
+                font-family: var(--font-roboto);
+                font-weight: var(--font-weight-regular);
+                font-size: 1rem;
+                color: var(--color-theme-dark);
+                text-align: center;
+            }
+            .rightside button {
+                margin-top: 2rem;
+            }
 
 
 /* top-seller-big */
@@ -947,6 +984,73 @@ color: var(--color-theme);
 
 
 
+.subscribe .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6rem;
+}
+    .subscribe .subscribe-now h1 {
+        font-size: 3.75rem;
+        font-family: var(--font-play);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-theme-dark);
+    }
+        .subscribe .subscribe-now h1 span {
+            font-weight: var(--font-weight-bold);
+            color: var(--color-theme);
+        }
+
+            .subscribe .subscribe-now p {
+                color: var(--color-theme-dark);
+                margin: 2rem 0rem;
+                max-width: 391px;
+            }
+
+                .subscribe .search #searchboxForm {
+                    position: relative;
+                    border-radius: var(--border-radius-medium);
+                    height: 45px;
+                    margin: auto;
+                }
+                    .subscribe .search #searchboxForm input {
+                        position: absolute;
+                        border-radius: var(--border-radius-medium);
+                        height: 100%;
+                        width: 100%;
+                        outline: none;
+                        border: 1px solid var(--color-gray-2);
+                        font-size: 0.9rem;
+                        padding-left: 1.3rem;
+                    }
+                        .subscribe .search #searchboxForm button {
+                            position: absolute;
+                            top: 3.3px;
+                            right: 3px;
+                            width: 107px;
+                            height: 85%;
+                            background-color: var(--color-theme);
+                            color: var(--color-white);
+                            border: none;
+                            border-radius: var(--border-radius-medium);
+                            transition: 0.15s ease-in-out;
+                        }
+                            .subscribe .search #searchboxForm button:hover {
+                                background-color: var(--color-theme-dark);
+                            }
+        
+
+
+
+.footer {
+    background: var(--color-dark);
+    color: var(--color-white);
+    padding: 1.5rem;
+}
+    .footer h2 {
+        font-family: var(--font-roboto);
+        font-weight: var(--font-weight-medium);
+        font-size: 1rem;
+    }
 
 
     
