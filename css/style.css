@@ -717,6 +717,29 @@ color: var(--color-theme);
         height: 100%;
         width: 320px;
     }
+    .circles { 
+    justify-content: space-between; 
+    }
+
+    .flash-sale .circle {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        background: var(--color-white);
+    }
+        .flash-sale .circle h1 {
+            font-family: var(--font-play);
+            font-weight: var(--font-weight-bold);
+            font-size: var(--font-size-36);
+            color: var(--color-theme);
+            justify-content: center;
+        }
+            .flash-sale .circle p {
+                color: var(--color-theme-dark);
+                line-height: 5px;
+            }
 
 
 /* top-seller-big */
