@@ -983,7 +983,7 @@ color: var(--color-theme);
                     }
 
 
-
+/* subscribe part */
 .subscribe .container {
     display: flex;
     justify-content: space-between;
@@ -1040,7 +1040,7 @@ color: var(--color-theme);
         
 
 
-
+/* footer */
 .footer {
     background: var(--color-dark);
     color: var(--color-white);
