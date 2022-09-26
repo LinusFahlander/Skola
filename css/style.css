@@ -1250,14 +1250,14 @@ color: var(--color-theme);
 
 /* 
 *"Alla krav som finns i godkänt nivån ska vara uppfyllda.
-*Du ska ha gjort samtliga delar som finns med i designmallen.
-*Alla knappar, kategoriboxar, produktboxar och länkar ska ha någon form av 
-animering/transition på sig.
-*Du ska självständigt strukturera din kod, både HTML och CSS på ett professionellt 
-sätt. 
-*Du får använda dig av Scss/Sass om du så vill göra CSS-koden mer professionell.
-*Du ska skriva korta kommentarer för alla de olika delarna som du bygger upp.
-*Du ska både göra förstasidan och inloggnings- och registreringssidan.
-*Formulären på inloggnings- och registreringssidan ska innehålla fält för att 
-kunna skriva ut felmeddelanden. Dock behöver dessa felmeddelanden inte skrivas ut." 
+*Du ska ha gjort samtliga delar som finns med i designmallen.                                       Klart
+*Alla knappar, kategoriboxar, produktboxar och länkar ska ha någon form av                          Klart
+animering/transition på sig.                                                                        -ll-
+*Du ska självständigt strukturera din kod, både HTML och CSS på ett professionellt                  Det skulle jag vilja säga
+sätt.                                                                                               -ll-
+*Du får använda dig av Scss/Sass om du så vill göra CSS-koden mer professionell.                    Ej klart
+*Du ska skriva korta kommentarer för alla de olika delarna som du bygger upp.                       Det som jag anser behövs är klart
+*Du ska både göra förstasidan och inloggnings- och registreringssidan.                              Klart
+*Formulären på inloggnings- och registreringssidan ska innehålla fält för att                       
+kunna skriva ut felmeddelanden. Dock behöver dessa felmeddelanden inte skrivas ut."                 
 */
